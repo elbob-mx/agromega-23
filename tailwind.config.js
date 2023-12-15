@@ -19,6 +19,10 @@ module.exports = {
         offWhite: "#F2F2F2",
         offBlack: "#181818",
       },
+      fontFamily: {
+        inter: "Inter, sans-serif",
+        robotoCon: "Roboto Condensed, sans-serif",
+      },
     },
   },
   plugins: ["flowbite/plugin"],
