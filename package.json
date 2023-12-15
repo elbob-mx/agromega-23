@@ -1,0 +1,16 @@
+{
+  "name": "agromega-23",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css"
+  },
+  "keywords": [],
+  "author": "webbyGravy",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
