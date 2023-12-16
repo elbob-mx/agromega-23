@@ -14,41 +14,81 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Inter:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <title>Agromega | Innovando en el comercio agrícola</title>
+    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/public/style.css">
 </head>
 
-<body class="box-border w-full bg-offWhite grid grid-cols-4 gap-10">
+<body class="w-full bg-offWhite font-inter text-offGray">
 
-    <nav
-        class="bg-offWhite border-r-[1px] border border-azulAgroClaro sticky h-full col-span-1 font-inter font-semibold">
-        <img src="/img/logo-agromega.svg" class="m-10 h-14" alt="logo agromega">
-        <ul class="mx-10 leading-loose">
-            <li><a href="#" class="hover:text-red-500 duration-300">Lorem, ipsum.</a></li>
-            <li><a href="#" class="hover:text-red-500 duration-300">Lorem, ipsum.</a></li>
-            <li><a href="#" class="hover:text-red-500 duration-300">Lorem, ipsum.</a></li>
-            <li><a href="#" class="hover:text-red-500 duration-300">Lorem, ipsum.</a></li>
-        </ul>
-    </nav>
+    <main class="grid grid-cols-2 gap-0 tablet:grid-cols-6 bg-offWhite">
 
-    <main class="bg-red-500 col-span-3 col-start-2">
+        <!-- FIXED SIDEBAR -->
+        <nav
+            class="h-screen top-0 sticky hidden tablet:flex tablet:col-span-1 bg-offWhite border-r-[1px] border-azulAgroClaro flex-col items-start justify-around flex-wrap">
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minima optio ad nisi quas libero!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste minima optio ad nisi quas libero!</p>
+            <!-- LOGO -->
+            <img src="/img/logo-agromega.svg" alt="logotipo agromega" class="pl-4 pr-16 mb-20">
 
+            <!-- MENU NAVBAR -->
+            <ul class="text-xl text-left">
+                <li class="py-5"><a href="#"
+                        class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Inicio</a>
+                </li>
+                <li class="py-5"><a href="#"
+                        class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Productos</a>
+                </li>
+                <li class="py-5"><a href="#"
+                        class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Servicios</a>
+                </li>
+                <li class="py-5"><a href="#"
+                        class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Contacto</a>
+                </li>
+            </ul>
 
-        <div
-            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                    acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                acquisitions of 2021 so far, in reverse chronological order.</p>
-        </div>
+            <!-- LOCATION & SOCIAL -->
+            <section class="pl-4">
+                <div>
+                    <i class="mr-2 text-right fa-solid fa-location-dot text-azulAgro"></i>
+                    <a href="https://maps.app.goo.gl/Ft7n5tBCHGtr1uVB9"><span class="font-bold">Pedro Parra
+                            Centeno
+                            110</span><br>Tlajomulco de Zúñiga</a>
+                </div>
+                <div class="pt-8"><a href="https://www.facebook.com/profile.php?id=100063775232938"><i
+                            class="mr-2 text-4xl fa-brands fa-square-facebook text-azulAgro"></i></a></div>
+            </section>
+        </nav>
+        <!-- END OF SIDEBAR -->
 
+        <!-- HOME MAIN CONTENT -->
+        <section class="col-span-2 m-6 tablet:col-span-5 tablet:m-20 bg-offWhite">
+            <!-- HOME BANNER -->
+            <div class="relative">
+                <!-- IMAGE -->
+                <img src="/img/tinified/index-main-banner.jpg" alt="banner principal agromega"
+                    class="object-cover w-full rounded-md tablet:rounded-xl brightness-75 tablet:brightness-90">
+                <!-- SLOGAN -->
+                <div class="absolute flex flex-col w-3/4 top-[25%] items-start flex-wrap ml-20">
+
+                    <h1 class="text-2xl uppercase tablet:text-8xl font-robotoCon text-offWhite">
+                        innovando en el comercio agrícola</h1>
+                    <!-- BENEFIT COPY -->
+                    <h2
+                        class="w-3/4 p-6 mt-4 text-sm bg-black rounded-lg tablet:text-xl opacity-70 text-offWhite font-inter">
+                        ¿Buscas una solución
+                        integral a
+                        las necesidades de nutrición y protección de cultivo
+                        y mayor rentabilidad para tu negocio?</h2>
+                    <!-- CONTACT US BUTTON -->
+                    <button
+                        class="px-6 py-3 mt-4 duration-300 rounded-md tablet:text-xl hover:bg-azulAgroClaro bg-azulAgro active:bg-offGray text-offWhite">Hablemos</button>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 

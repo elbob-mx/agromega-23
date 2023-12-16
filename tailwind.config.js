@@ -18,6 +18,8 @@ module.exports = {
         azulAgroClaro: "#00ABEA",
         offWhite: "#F2F2F2",
         offBlack: "#181818",
+        offGray: "#3A3A3A",
+        guarany: "##FEBC06",
       },
       fontFamily: {
         inter: "Inter, sans-serif",
