@@ -25,23 +25,23 @@
 
         <!-- FIXED SIDEBAR -->
         <nav
-            class="h-screen top-0 sticky hidden tablet:flex tablet:col-span-1 bg-offWhite border-r-[1px] border-azulAgroClaro flex-col items-start justify-around flex-wrap">
+            class="h-screen top-0 sticky hidden tablet:flex tablet:col-span-1 bg-offWhite border-r-[1px] border-azulAgroClaro flex-col items-start justify-evenly flex-wrap">
 
             <!-- LOGO -->
             <img src="/img/logo-agromega.svg" alt="logotipo agromega" class="pl-4 pr-16 mb-20">
 
             <!-- MENU NAVBAR -->
             <ul class="text-xl text-left">
-                <li class="py-5"><a href="#"
+                <li class="py-5"><a href="index.html"
                         class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Inicio</a>
                 </li>
-                <li class="py-5"><a href="#"
+                <li class="py-5"><a href="productos.html"
                         class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Productos</a>
                 </li>
-                <li class="py-5"><a href="#"
+                <li class="py-5"><a href="servicios.html"
                         class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Servicios</a>
                 </li>
-                <li class="py-5"><a href="#"
+                <li class="py-5"><a href="contacto.html"
                         class="px-4 py-2 duration-300 rounded-r-md hover:bg-azulAgro hover:text-offWhite">Contacto</a>
                 </li>
             </ul>
@@ -60,6 +60,14 @@
         </nav>
         <!-- END OF SIDEBAR -->
 
+        <!-- MOBILE NAVBAR -->
+        <nav class="grid w-full col-span-2 my-5 bg-transparent tablet:hidden">
+            <div class="flex flex-row items-center justify-evenly">
+                <img src="/img/logo-agromega.svg" alt="logo agromega" class="h-12">
+                <a href="#"><i class="text-3xl fa-solid fa-bars text-azulAgro"></i></a>
+            </div>
+        </nav>
+
         <!-- HOME MAIN CONTENT -->
         <section class="col-span-2 m-6 tablet:col-span-5 tablet:m-20 bg-offWhite">
             <!-- HOME BANNER -->
@@ -74,14 +82,15 @@
                         innovando en el comercio agrícola</h1>
                     <!-- BENEFIT COPY -->
                     <h2
-                        class="w-3/4 p-6 mt-4 text-sm bg-black rounded-lg tablet:text-xl opacity-70 text-offWhite font-inter">
+                        class="w-3/4 p-6 mt-4 text-sm rounded-lg bg-offBlack opacity-80 tablet:text-xl text-offWhite font-inter">
                         ¿Buscas una solución
                         integral a
                         las necesidades de nutrición y protección de cultivo
                         y mayor rentabilidad para tu negocio?</h2>
                     <!-- CONTACT US BUTTON -->
                     <button
-                        class="px-6 py-3 mt-4 duration-300 rounded-md tablet:text-xl hover:bg-azulAgroClaro bg-azulAgro active:bg-offGray text-offWhite">Hablemos</button>
+                        class="px-6 py-3 mt-4 duration-300 rounded-md tablet:text-xl hover:bg-azulAgroClaro bg-azulAgro active:bg-offGray text-offWhite"><a
+                            href="contacto.html">Hablemos</a></button>
                 </div>
             </div>
         </section>
