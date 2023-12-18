@@ -598,6 +598,14 @@ video {
   margin-top: 1rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -681,6 +689,11 @@ video {
   border-top-right-radius: 0.375rem;
 }
 
+.rounded-b-none {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .border-r-\[1px\] {
   border-right-width: 1px;
 }
@@ -722,6 +735,26 @@ video {
   background-color: rgb(58 58 58 / var(--tw-bg-opacity));
 }
 
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(163 163 163 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.bg-azulAgroClaro {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 171 234 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -729,6 +762,18 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-64 {
+  padding: 16rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-4 {
@@ -754,6 +799,16 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-4 {
@@ -874,6 +929,10 @@ video {
     position: absolute;
   }
 
+  .tablet\:relative {
+    position: relative;
+  }
+
   .tablet\:top-\[25\%\] {
     top: 25%;
   }
@@ -914,6 +973,10 @@ video {
     margin-top: 1rem;
   }
 
+  .tablet\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
   .tablet\:flex {
     display: flex;
   }
@@ -924,6 +987,19 @@ video {
 
   .tablet\:w-3\/4 {
     width: 75%;
+  }
+
+  .tablet\:w-full {
+    width: 100%;
+  }
+
+  .tablet\:w-1\/2 {
+    width: 50%;
+  }
+
+  .tablet\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .tablet\:grid-cols-6 {
@@ -938,9 +1014,35 @@ video {
     border-radius: 0.5rem;
   }
 
+  .tablet\:rounded-md {
+    border-radius: 0.375rem;
+  }
+
+  .tablet\:rounded-none {
+    border-radius: 0px;
+  }
+
   .tablet\:bg-offBlack {
     --tw-bg-opacity: 1;
     background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+  }
+
+  .tablet\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .tablet\:p-0 {
+    padding: 0px;
+  }
+
+  .tablet\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .tablet\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .tablet\:text-8xl {
@@ -950,6 +1052,11 @@ video {
 
   .tablet\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .tablet\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
