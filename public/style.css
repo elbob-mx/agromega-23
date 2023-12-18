@@ -606,6 +606,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -984,6 +988,10 @@ video {
 
   .tablet\:ml-3 {
     margin-left: 0.75rem;
+  }
+
+  .tablet\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .tablet\:flex {
