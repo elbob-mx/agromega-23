@@ -1429,8 +1429,21 @@ video {
 }
 
 @media (min-width: 976px) {
+  .laptop\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .laptop\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .laptop\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .laptop\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .laptop\:flex {
