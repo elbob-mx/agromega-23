@@ -21,14 +21,14 @@
 
 <body class="w-full bg-offWhite font-inter text-offGray">
 
-    <main class="grid grid-cols-2 gap-0 tablet:grid-cols-6 bg-offWhite">
+    <main class="grid grid-cols-2 gap-0 laptop:grid-cols-6 bg-offWhite">
 
         <!-- FIXED SIDEBAR -->
         <nav
-            class="h-screen top-0 sticky hidden tablet:flex tablet:col-span-1 bg-offWhite border-r-[1px] border-azulAgroClaro flex-col items-start justify-evenly flex-wrap">
+            class="h-screen top-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-azulAgroClaro flex-col items-start justify-evenly flex-wrap">
 
             <!-- LOGO -->
-            <img src="/img/logo-agromega.svg" alt="logotipo agromega" class="px-4 tablet:mt-10 tablet:mb-20">
+            <img src="/img/logo-agromega.svg" alt="logotipo agromega" class="px-4 laptop:mt-10 laptop:mb-20">
 
             <!-- MENU NAVBAR -->
             <ul class="text-xl text-left">
@@ -74,7 +74,7 @@
         <!-- END OF SIDEBAR -->
 
         <!-- MOBILE NAVBAR -->
-        <nav class="grid w-full col-span-2 my-5 bg-transparent tablet:hidden">
+        <nav class="grid w-full col-span-2 my-5 bg-transparent laptop:hidden">
             <div class="flex flex-row items-center justify-evenly">
                 <img src="/img/logo-agromega.svg" alt="logo agromega" class="h-12">
                 <a href="#"><i class="text-3xl fa-solid fa-bars text-azulAgro"></i></a>
@@ -83,45 +83,45 @@
 
         <!-- HOME MAIN CONTENT -->
         <section id="main-banner-content"
-            class="col-span-2 m-6 tablet:col-span-5 tablet:gap-20 tablet:m-20 bg-offWhite">
+            class="col-span-2 m-6 laptop:col-span-5 laptop:gap-20 laptop:m-20 bg-offWhite">
             <!-- HOME BANNER -->
             <div
-                class="p-4 rounded-md tablet:rounded-none tablet:p-0 tablet:relative bg-neutral-200 tablet:bg-transparent">
+                class="p-4 rounded-md laptop:rounded-none laptop:p-0 laptop:relative bg-neutral-200 laptop:bg-transparent">
                 <!-- IMAGE -->
                 <img src="/img/tinified/index-main-banner.jpg" alt="banner principal agromega"
-                    class="object-cover w-full rounded-t-md tablet:rounded-xl brightness-75 tablet:brightness-90">
+                    class="object-cover w-full rounded-t-md laptop:rounded-xl brightness-75 laptop:brightness-90">
                 <!-- SLOGAN -->
                 <div
-                    class="tablet:absolute flex flex-col tablet:w-3/4 w-full tablet:top-[15%] top-[30%] items-start flex-wrap ml-0 tablet:ml-20">
+                    class="laptop:absolute flex flex-col laptop:w-3/4 w-full laptop:top-[15%] top-[30%] items-start flex-wrap ml-0 laptop:ml-20">
 
                     <h1
-                        class="p-4 text-2xl font-semibold uppercase tablet:p-0 bg-azulAgro tablet:bg-transparent tablet:text-8xl font-robotoCon text-offWhite tablet:ml-0">
+                        class="p-4 text-2xl font-semibold uppercase laptop:p-0 bg-azulAgro laptop:bg-transparent laptop:text-8xl font-robotoCon text-offWhite laptop:ml-0">
                         innovando en el comercio agrícola</h1>
                     <!-- BENEFIT COPY -->
                     <h2
-                        class="w-full p-4 text-sm leading-relaxed rounded-b-md tablet:rounded-md tablet:mt-4 tablet:w-3/4 tablet:bg-offBlack bg-offGray tablet:opacity-80 tablet:text-lg text-offWhite">
+                        class="w-full px-6 py-3 text-sm font-semibold leading-relaxed rounded-b-md laptop:rounded-md laptop:mt-4 laptop:w-3/4 laptop:bg-offBlack bg-offGray laptop:opacity-80 laptop:text-lg text-offWhite">
                         ¿Buscas una solución
                         integral a
                         las necesidades de nutrición y protección de cultivo
                         y mayor rentabilidad para tu negocio?</h2>
                     <!-- CONTACT US BUTTON -->
                     <button
-                        class="w-full px-6 py-3 mt-2 text-xl font-bold duration-300 rounded-md hover:text-offBlack tablet:mt-6 tablet:w-fit hover:bg-offWhite bg-azulAgroClaro active:bg-offGray active:text-offWhite text-offWhite"><a
+                        class="w-full px-6 py-3 mt-2 text-xl font-bold duration-300 rounded-md hover:text-offBlack laptop:mt-6 laptop:w-fit hover:bg-offWhite bg-azulAgroClaro active:bg-offGray active:text-offWhite text-offWhite"><a
                             href="contacto.html">Hablemos</a></button>
                 </div>
                 <!-- ARROW DOWN -->
-                <div class="flex-row justify-center hidden mt-3 tablet:flex"><a
+                <div class="flex-row justify-center hidden mt-3 laptop:flex"><a
                         class="duration-500 hover:text-azulAgro text-azulAgroClaro hover:translate-y-2"
                         href="#home-intro"><i class="text-3xl fa-solid fa-arrow-down"></i></a></div>
             </div>
 
             <!-- HOME SEC CONTENT -->
-            <section id="home-intro" class="flex flex-col pt-10 mt-10 bg-transparent rounded-xl tablet:flex-row">
+            <section id="home-intro" class="flex flex-col pt-10 mt-10 bg-transparent rounded-xl laptop:flex-row">
 
                 <!-- HOME SEC BANNER -->
                 <!-- IMAGE AS BKG -->
                 <img src="/img/tinified/index-sec-banner.jpg" alt="banner guarany agromega"
-                    class="object-cover w-full origin-center rounded-xl tablet:w-1/4 brightness-100 tablet:brightness-100">
+                    class="object-cover w-full origin-center rounded-xl laptop:w-1/4 brightness-100 laptop:brightness-100">
                 <!-- HOME SEC COPY CONTENT -->
                 <div class="p-10">
                     <h3 class="mb-8 text-6xl font-light">Relaciones de confianza</h3>
@@ -145,8 +145,9 @@
                     Productos</h2>
                 <div id="accordion-collapse" data-accordion="collapse" class="w-full">
                     <h2 id="accordion-collapse-heading-1">
+                        <!-- NUTRICION VEGETAL -->
                         <button type="button"
-                            class="flex items-center justify-between w-full gap-3 p-5 font-medium text-gray-500 border border-b-0 border-gray-200 rtl:text-right rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                            class="flex items-center justify-start w-full gap-3 p-5 font-medium border border-b-0 border-gray-200 text-offBlack rtl:text-right rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                             data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                             aria-controls="accordion-collapse-body-1">
                             <span class="text-xl font-semibold">Nutrición vegetal</span>
