@@ -25,7 +25,7 @@
 
         <!-- FIXED SIDEBAR -->
         <nav
-            class="h-screen top-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-azulAgroClaro flex-col items-start justify-evenly flex-wrap">
+            class="h-screen top-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-transparent flex-col items-start justify-evenly flex-wrap">
 
             <!-- LOGO -->
             <img src="/img/logo-agromega.svg" alt="logotipo agromega" class="px-4 laptop:mt-10 laptop:mb-20">
@@ -74,16 +74,14 @@
         <!-- END OF SIDEBAR -->
 
         <!-- MOBILE NAVBAR -->
-        <nav class="grid w-full col-span-2 my-5 bg-transparent laptop:hidden">
-            <div class="flex flex-row items-center justify-evenly">
-                <img src="/img/logo-agromega.svg" alt="logo agromega" class="h-12">
-                <a href="#"><i class="text-3xl fa-solid fa-bars text-azulAgro"></i></a>
-            </div>
+        <nav class="w-full flex flex-row items-center justify-around bg-offWhite fixed z-50 laptop:hidden h-20">
+            <img src="/img/logo-agromega.svg" alt="logo agromega" class="h-12">
+            <a href="#"><i class="text-3xl fa-solid fa-bars text-azulAgro"></i></a>
         </nav>
 
         <!-- HOME MAIN CONTENT -->
         <section id="main-banner-content"
-            class="col-span-2 m-6 laptop:col-span-5 laptop:gap-20 laptop:m-20 bg-offWhite">
+            class="col-span-2 m-6 mt-24 laptop:col-span-5 laptop:gap-20 laptop:m-20 bg-offWhite">
             <!-- HOME BANNER -->
             <div
                 class="p-4 rounded-md laptop:rounded-none laptop:p-0 laptop:relative bg-neutral-200 laptop:bg-transparent">
@@ -95,7 +93,7 @@
                     class="laptop:absolute flex flex-col laptop:w-3/4 w-full laptop:top-[15%] top-[30%] items-start flex-wrap ml-0 laptop:ml-20">
 
                     <h1
-                        class="p-4 text-3xl font-semibold uppercase laptop:p-0 bg-azulAgro laptop:bg-transparent laptop:text-8xl font-robotoCon text-offWhite laptop:ml-0">
+                        class="p-4 text-3xl font-semibold uppercase laptop:p-0 bg-azulAgro laptop:bg-transparent laptop:text-8xl font-robotoCon text-offWhite laptop:ml-0 w-full">
                         innovando en el comercio agrícola</h1>
                     <!-- BENEFIT COPY -->
                     <h2
