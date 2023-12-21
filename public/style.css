@@ -1206,6 +1206,10 @@ video {
   text-align: right;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
