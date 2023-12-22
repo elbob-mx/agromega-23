@@ -139,66 +139,106 @@
             </section>
 
 
-            <section class="grid grid-flow-row mt-10 bg-neutral-200 p-10 grid-cols-2 rounded-xl mx-auto">
-                <!-- Modal toggle -->
-                <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-                    class="col-span-1 px-6 py-3 text-4xl font-semibold duration-300 rounded-lg hover:text-offBlack hover:bg-offWhite bg-azulAgroClaro active:bg-offGray active:text-offWhite text-offWhite"
-                    type="button">
-                    Productos
-                </button>
+            <section>
+                <h2 class="mt-20 text-left bg-azulAgro text-offWhite px-8 py-4 rounded-t-xl text-2xl">Opciones al
+                    alcance
+                    de tus manos:
+                </h2>
+                <div class="grid grid-flow-row mt-0 bg-neutral-200 p-8 grid-cols-2 rounded-b-xl mx-auto">
+                    <!-- Modal toggle -->
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                        class="col-span-1 px-6 py-3 text-4xl font-semibold duration-300 rounded-lg hover:text-offBlack hover:bg-offWhite bg-azulAgroClaro active:bg-offGray active:text-offWhite text-offWhite"
+                        type="button">
+                        Productos
+                    </button>
 
-                <!-- Main modal -->
-                <div id="default-modal" tabindex="-1" aria-hidden="true"
-                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                    <div class="relative p-4 w-3/4 h-3/4">
-                        <!-- Modal content -->
-                        <div class="relative bg-offWhite rounded-lg shadow dark:bg-offWhite">
-                            <!-- Modal header -->
-                            <div
-                                class="flex items-center justify-between px-10 py-5 border-b rounded-t dark:border-gray-600">
-                                <h3 class="text-4xl font-semibold text-offBlack dark:text-offBlack">
-                                    Productos
-                                </h3>
-                                <button type="button"
-                                    class="text-offGray bg-offWhite hover:bg-offWhite hover:text-offGray rounded-lg text-base w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-offWhite dark:hover:text-offGray"
-                                    data-modal-hide="default-modal">
-                                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 14 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                                    </svg>
-                                    <span class="sr-only">Cerrar modal</span>
-                                </button>
-                            </div>
-                            <!-- Modal body -->
-                            <div class="px-10 py-5">
-                                <p class="text-base leading-normal text-offGray dark:text-offGray">
-                                    With less than a month to go before the European Union enacts new consumer privacy
-                                    laws
-                                    for its citizens, companies around the world are updating their terms of service
-                                    agreements to comply.
-                                </p>
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect
-                                    on
-                                    May 25 and is meant to ensure a common set of data rights in the European Union. It
-                                    requires organizations to notify users as soon as possible of high-risk data
-                                    breaches
-                                    that could personally affect them.
-                                </p>
-                            </div>
-                            <!-- Modal footer -->
-                            <div
-                                class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                <button data-modal-hide="default-modal" type="button"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Cerrar</button>
-
+                    <!-- Main modal -->
+                    <div id="default-modal" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-3/4 h-3/4">
+                            <!-- Modal content -->
+                            <div class="relative bg-offWhite rounded-lg shadow dark:bg-offWhite">
+                                <!-- Modal header -->
+                                <div class="flex items-center justify-between px-10 py-5 dark:border-gray-600">
+                                    <h3 class="text-5xl mt-5 font-semibold text-neutral-500 dark:text-neutral-400">
+                                        Productos
+                                    </h3>
+                                    <button type="button"
+                                        class="text-offGray bg-offWhite hover:bg-offWhite hover:text-offGray rounded-lg text-base w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-offWhite dark:hover:text-offGray"
+                                        data-modal-hide="default-modal">
+                                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                            fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Cerrar modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="px-10 py-2">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fa-wheat-awn-circle-exclamation mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold text-2xl text-offBlack">Nutrición vegetal:</h3>
+                                    </div>
+                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                        Tenemos una gran oferta de macronutrientes y micronutrientes esenciales para el
+                                        correcto desarrollo; clasificados en granulados, solubles y especialidades.
+                                        Hacemos
+                                        mezclas físicas.
+                                    </p>
+                                </div>
+                                <div class="px-10 py-2">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fa-shield mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold text-2xl text-offBlack">Protección de cultivo:</h3>
+                                    </div>
+                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                        Promovemos agroquímicos innovadores para la protección de cultivo; marcas
+                                        reconocidas y amigables con el medio ambiente.
+                                    </p>
+                                </div>
+                                <div class="px-10 py-2">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fas fa-faucet-drip mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold text-2xl text-offBlack">Equipo de riego + consumibles:
+                                        </h3>
+                                    </div>
+                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                        Desarrollamos proyectos a la medida y de llave en mano.
+                                        Tenemos todos los consumibles y refacciones disponibles.
+                                    </p>
+                                </div>
+                                <div class="px-10 py-2">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fas fas fa-screwdriver-wrench mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold text-2xl text-offBlack">Equipos de aplicación:</h3>
+                                    </div>
+                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                        Importadores y distribuidores de una de las líneas de alta gama, más completas:
+                                        <span
+                                            class="font-medium text-offBlack px-2 py-1 rounded-full bg-amber-400">GUARANY</span>
+                                    </p>
+                                </div>
+                                <div class="px-10 py-2">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fas fas fas fa-seedling mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold text-2xl text-offBlack">Semillas para siembra:</h3>
+                                    </div>
+                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                        Manejamos una oferta de calidad certificada, principalmente alfalfas, sorgos
+                                        forrajeros y hortalizas.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="flex flex-row justify-end p-10">
+                                    <button data-modal-hide="default-modal" type="button"
+                                        class="text-white bg-red-500 hover:bg-red-500 font-medium rounded-lg text-base px-6 py-2 text-center dark:bg-azulAgro dark:hover:bg-azulAgro duration-500 hover:text-offWhite">OK</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </section>
     </main>
 
