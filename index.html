@@ -25,7 +25,7 @@
 
         <!-- FIXED SIDEBAR -->
         <nav
-            class="h-screen top-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-transparent flex-col items-start justify-evenly flex-wrap">
+            class="h-screen top-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-transparent flex-col items-start justify-evenly flex-wrap drop-shadow-xl">
 
             <!-- LOGO -->
             <img src="img/logo-agromega.svg" alt="logotipo agromega" class="px-4 laptop:mt-0 laptop:mb-10">
@@ -139,15 +139,18 @@
             </section>
 
 
+            <!-- MODAL PRODUCTOS SERVICIOS -->
             <section>
-                <h2 class="mt-20 text-left bg-azulAgro text-offWhite px-8 py-4 rounded-t-xl text-2xl">Opciones al
+                <h2 class="mt-20 text-left bg-azulAgro text-offWhite laptop:px-8 laptop:py-4 p-4 rounded-t-xl text-2xl">
+                    Opciones al
                     alcance
                     de tus manos:
                 </h2>
-                <div class="grid grid-flow-row mt-0 bg-neutral-200 p-8 grid-cols-2 rounded-b-xl mx-auto">
+                <div
+                    class="grid laptop:grid-flow-row grid-flow-col mt-0 bg-neutral-200 gap-8 laptop:p-8 p-4 laptop:grid-cols-2 grid-cols-1 rounded-b-xl mx-auto">
                     <!-- Modal toggle -->
                     <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-                        class="col-span-1 px-6 py-3 text-4xl font-semibold duration-300 rounded-lg hover:text-offBlack hover:bg-offWhite bg-azulAgroClaro active:bg-offGray active:text-offWhite text-offWhite"
+                        class="col-span-1 laptop:px-6 laptop:py-3 py-1 w-full laptop:text-4xl text-2xl font-semibold duration-300 rounded-lg hover:text-offWhite hover:bg-azulAgro bg-azulMid active:bg-offGray active:text-offWhite text-offWhite"
                         type="button">
                         Productos
                     </button>
@@ -155,19 +158,20 @@
                     <!-- Main modal -->
                     <div id="default-modal" tabindex="-1" aria-hidden="true"
                         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                        <div class="relative p-4 w-3/4 h-3/4">
+                        <div class="relative laptop:p-4 p-2 w-11/12 h-full laptop:w-3/4 laptop:h-3/4">
                             <!-- Modal content -->
                             <div class="relative bg-offWhite rounded-lg shadow dark:bg-offWhite">
                                 <!-- Modal header -->
                                 <div class="flex items-center justify-between px-10 py-5 dark:border-gray-600">
-                                    <h3 class="text-5xl mt-5 font-semibold text-neutral-500 dark:text-neutral-400">
+                                    <h3
+                                        class="laptop:text-5xl text-3xl mt-5 font-semibold text-neutral-500 dark:text-neutral-400">
                                         Productos
                                     </h3>
                                     <button type="button"
                                         class="text-offGray bg-offWhite hover:bg-offWhite hover:text-offGray rounded-lg text-base w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-offWhite dark:hover:text-offGray"
                                         data-modal-hide="default-modal">
-                                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                            fill="none" viewBox="0 0 14 14">
+                                        <svg class="laptop:w-6 w-3 h-3 laptop:h-6" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                                 stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                         </svg>
@@ -175,68 +179,174 @@
                                     </button>
                                 </div>
                                 <!-- Modal body -->
-                                <div class="px-10 py-2">
+                                <div class="px-10 laptop:py-2 py-4">
                                     <div class="flex flex-row justify-start items-center"><i
                                             class="text-xl fa-solid fa-wheat-awn-circle-exclamation mr-2 text-azulAgro"></i>
-                                        <h3 class="font-semibold text-2xl text-offBlack">Nutrición vegetal:</h3>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Nutrición
+                                            vegetal:</h3>
                                     </div>
-                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                    <p
+                                        class="laptop:text-lg text-sm laptop:leading-normal text-offGray dark:text-offGray">
                                         Tenemos una gran oferta de macronutrientes y micronutrientes esenciales para el
                                         correcto desarrollo; clasificados en granulados, solubles y especialidades.
                                         Hacemos
                                         mezclas físicas.
                                     </p>
                                 </div>
-                                <div class="px-10 py-2">
+                                <div class="px-10 laptop:py-2 py-4">
                                     <div class="flex flex-row justify-start items-center"><i
                                             class="text-xl fa-solid fa-shield mr-2 text-azulAgro"></i>
-                                        <h3 class="font-semibold text-2xl text-offBlack">Protección de cultivo:</h3>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Protección de
+                                            cultivo:</h3>
                                     </div>
-                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
                                         Promovemos agroquímicos innovadores para la protección de cultivo; marcas
                                         reconocidas y amigables con el medio ambiente.
                                     </p>
                                 </div>
-                                <div class="px-10 py-2">
+                                <div class="px-10 laptop:py-2 py-4">
                                     <div class="flex flex-row justify-start items-center"><i
                                             class="text-xl fa-solid fas fa-faucet-drip mr-2 text-azulAgro"></i>
-                                        <h3 class="font-semibold text-2xl text-offBlack">Equipo de riego + consumibles:
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Equipo de riego
+                                            + consumibles:
                                         </h3>
                                     </div>
-                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
                                         Desarrollamos proyectos a la medida y de llave en mano.
                                         Tenemos todos los consumibles y refacciones disponibles.
                                     </p>
                                 </div>
-                                <div class="px-10 py-2">
+                                <div class="px-10 laptop:py-2 py-4">
                                     <div class="flex flex-row justify-start items-center"><i
                                             class="text-xl fa-solid fas fas fa-screwdriver-wrench mr-2 text-azulAgro"></i>
-                                        <h3 class="font-semibold text-2xl text-offBlack">Equipos de aplicación:</h3>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Equipos de
+                                            aplicación:</h3>
                                     </div>
-                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
                                         Importadores y distribuidores de una de las líneas de alta gama, más completas:
-                                        <span
-                                            class="font-medium text-offBlack px-2 py-1 rounded-full bg-amber-400">GUARANY</span>
+                                        <span class="font-bold text-yellow-600">GUARANY</span>
                                     </p>
                                 </div>
-                                <div class="px-10 py-2">
+                                <div class="px-10 laptop:py-2 py-4">
                                     <div class="flex flex-row justify-start items-center"><i
                                             class="text-xl fa-solid fas fas fas fa-seedling mr-2 text-azulAgro"></i>
-                                        <h3 class="font-semibold text-2xl text-offBlack">Semillas para siembra:</h3>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Semillas para
+                                            siembra:</h3>
                                     </div>
-                                    <p class="text-lg leading-normal text-offGray dark:text-offGray">
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
                                         Manejamos una oferta de calidad certificada, principalmente alfalfas, sorgos
                                         forrajeros y hortalizas.
                                     </p>
                                 </div>
                                 <!-- Modal footer -->
-                                <div class="flex flex-row justify-end p-10">
+                                <div class="flex flex-row justify-end py-5 px-10">
                                     <button data-modal-hide="default-modal" type="button"
-                                        class="text-white bg-red-500 hover:bg-red-500 font-medium rounded-lg text-base px-6 py-2 text-center dark:bg-azulAgro dark:hover:bg-azulAgro duration-500 hover:text-offWhite">OK</button>
+                                        class="text-white bg-red-500 hover:bg-red-500 font-medium rounded-lg text-base px-6 py-2 text-center dark:bg-azulAgroClaro dark:hover:bg-azulAgro duration-500 hover:text-offWhite">Regresar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- END MODAL PRODUCTOS -->
+
+
+                    <!-- SERVICIOS MODAL -->
+                    <button data-modal-target="default-modal-2" data-modal-toggle="default-modal-2"
+                        class="col-span-1 laptop:px-6 laptop:py-3 py-1 w-full laptop:text-4xl text-2xl font-semibold duration-300 rounded-lg hover:text-offWhite hover:bg-azulAgro bg-azulMid active:bg-offGray active:text-offWhite text-offWhite"
+                        type="button">
+                        Servicios
+                    </button>
+
+                    <div id="default-modal-2" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative laptop:p-4 p-2 w-11/12 h-full laptop:w-3/4 laptop:h-3/4">
+                            <!-- Modal content -->
+                            <div class="relative bg-offWhite rounded-lg shadow dark:bg-offWhite">
+                                <!-- Modal header -->
+                                <div class="flex items-center justify-between px-10 py-5 dark:border-gray-600">
+                                    <h3
+                                        class="laptop:text-5xl text-3xl mt-5 font-semibold text-neutral-500 dark:text-neutral-400">
+                                        Servicios
+                                    </h3>
+                                    <button type="button"
+                                        class="text-offGray bg-offWhite hover:bg-offWhite hover:text-offGray rounded-lg text-base w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-offWhite dark:hover:text-offGray"
+                                        data-modal-hide="default-modal-2">
+                                        <svg class="laptop:w-6 w-3 h-3 laptop:h-6" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        </svg>
+                                        <span class="sr-only">Cerrar modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="px-10 laptop:py-2 py-4">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fa-wheat-awn-circle-exclamation mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Asesoría en
+                                            nutrición:</h3>
+                                    </div>
+                                    <p
+                                        class="laptop:text-lg text-sm laptop:leading-normal text-offGray dark:text-offGray">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vitae
+                                        numquam tempora rerum deleniti soluta explicabo reiciendis quas aut facilis,
+                                        perspiciatis recusandae, ipsum eaque, ut iure. Odio nulla deleniti ullam..
+                                    </p>
+                                </div>
+                                <div class="px-10 laptop:py-2 py-4">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fa-shield mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Asesoría en
+                                            protección:</h3>
+                                    </div>
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, dolores totam.
+                                        Velit delectus facilis fuga?.
+                                    </p>
+                                </div>
+                                <div class="px-10 laptop:py-2 py-4">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fas fa-faucet-drip mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Programas de
+                                            nutrición:
+                                        </h3>
+                                    </div>
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint officiis
+                                        voluptatum, nulla laborum vitae numquam corporis facilis repellat est totam?.
+                                    </p>
+                                </div>
+                                <div class="px-10 laptop:py-2 py-4">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fas fas fa-screwdriver-wrench mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Mantenimiento de
+                                            equipos:</h3>
+                                    </div>
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
+                                        Reparamos y renovamos tus equipos de aplicación GUARANY. Te proveemos de las
+                                        refacciones necesarias para su óptimo desempeño.</span>
+                                    </p>
+                                </div>
+                                <div class="px-10 laptop:py-2 py-4">
+                                    <div class="flex flex-row justify-start items-center"><i
+                                            class="text-xl fa-solid fas fas fas fa-seedling mr-2 text-azulAgro"></i>
+                                        <h3 class="font-semibold laptop:text-2xl text-xl text-offBlack">Capacitaciones:
+                                        </h3>
+                                    </div>
+                                    <p class="laptop:text-lg text-sm leading-normal text-offGray dark:text-offGray">
+                                        Te capacitamos para el correcto uso y calibración de equipos Guarany. Te
+                                        capacitamos para la correcta aplicación de fertilizantes y agroquímicos.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="flex flex-row justify-end py-5 px-10">
+                                    <button data-modal-hide="default-modal-2" type="button"
+                                        class="text-white bg-red-500 hover:bg-red-500 font-medium rounded-lg text-base px-6 py-2 text-center dark:bg-azulAgroClaro dark:hover:bg-azulAgro duration-500 hover:text-offWhite">Regresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MODAL SERVICIOS -->
+
                 </div>
             </section>
         </section>

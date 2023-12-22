@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         azulAgro: "#1755A1",
+        azulMid: "#297be0",
         azulAgroClaro: "#00ABEA",
         offWhite: "#F2F2F2",
         offBlack: "#181818",
