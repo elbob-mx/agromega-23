@@ -25,7 +25,7 @@
 
         <!-- FIXED SIDEBAR -->
         <nav
-            class="h-screen top-0 left-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-transparent flex-col items-start justify-evenly flex-wrap">
+            class="h-screen top-0 sticky hidden laptop:flex laptop:col-span-1 bg-offWhite border-r-[1px] border-transparent flex-col items-start justify-evenly flex-wrap">
 
             <!-- LOGO -->
             <img src="img/logo-agromega.svg" alt="logotipo agromega" class="px-4 laptop:mt-0 laptop:mb-10">
@@ -137,29 +137,68 @@
                     </div>
                 </div>
             </section>
-            <section class="mt-10">
-                <div class=" flex flex-col flex-wrap justify-between w-full gap-10 laptop:flex-row">
-                    <div
-                        class="relative group w-full p-8 text-4xl duration-1000 laptop:w-1/12 bg-azulAgro laptop:hover:w-10/12 grow shrink hover:bg-neutral-200 h-36 hover:h-96 rounded-xl text-offWhite hover:text-offBlack">
-                        Productos <i class="fa-solid fa-chevron-down text-3xl"></i>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 duration-500 absolute mt-5 flex flex-col text-left mr-20 delay-300 text-lg text-offGray font-normal font-base">
-                            NUTRICIÓN VEGETAL:
-                            Tenemos una gran oferta de macronutrientes y micronutrientes esenciales para el correcto
-                            desarrollo; clasificados en granulados, solubles y especialidades. Hacemos mezclas físicas.
-                        </div>
-                        <div
-                            class="relative group w-full p-8 text-4xl duration-1000 laptop:w-1/12 bg-azulAgro laptop:hover:w-10/12 grow shrink hover:bg-neutral-200 h-36 hover:h-96 rounded-xl text-offWhite hover:text-offBlack">
-                            Servicios <i class="fa-solid fa-chevron-down text-3xl"></i>
+
+
+            <section class="grid grid-flow-row mt-10 bg-neutral-200 p-10 grid-cols-2 rounded-xl mx-auto">
+                <!-- Modal toggle -->
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                    class="col-span-1 px-6 py-3 text-4xl font-semibold duration-300 rounded-lg hover:text-offBlack hover:bg-offWhite bg-azulAgroClaro active:bg-offGray active:text-offWhite text-offWhite"
+                    type="button">
+                    Productos
+                </button>
+
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-3/4 h-3/4">
+                        <!-- Modal content -->
+                        <div class="relative bg-offWhite rounded-lg shadow dark:bg-offWhite">
+                            <!-- Modal header -->
                             <div
-                                class="opacity-0 group-hover:opacity-100 duration-500 absolute mt-5 flex justify-center items-end text-xl bg-gray-200 text-offBlack font-base">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo qui magnam sint, ratione
-                                laudantium quia dicta aspernatur consectetur voluptates inventore placeat, temporibus
-                                quas
-                                aut quibusdam ad consequatur dolore animi alias?</div>
+                                class="flex items-center justify-between px-10 py-5 border-b rounded-t dark:border-gray-600">
+                                <h3 class="text-4xl font-semibold text-offBlack dark:text-offBlack">
+                                    Productos
+                                </h3>
+                                <button type="button"
+                                    class="text-offGray bg-offWhite hover:bg-offWhite hover:text-offGray rounded-lg text-base w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-offWhite dark:hover:text-offGray"
+                                    data-modal-hide="default-modal">
+                                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                    </svg>
+                                    <span class="sr-only">Cerrar modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="px-10 py-5">
+                                <p class="text-base leading-normal text-offGray dark:text-offGray">
+                                    With less than a month to go before the European Union enacts new consumer privacy
+                                    laws
+                                    for its citizens, companies around the world are updating their terms of service
+                                    agreements to comply.
+                                </p>
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect
+                                    on
+                                    May 25 and is meant to ensure a common set of data rights in the European Union. It
+                                    requires organizations to notify users as soon as possible of high-risk data
+                                    breaches
+                                    that could personally affect them.
+                                </p>
+                            </div>
+                            <!-- Modal footer -->
+                            <div
+                                class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                <button data-modal-hide="default-modal" type="button"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Cerrar</button>
+
+                            </div>
                         </div>
                     </div>
+                </div>
             </section>
+
         </section>
     </main>
 
