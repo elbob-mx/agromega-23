@@ -694,6 +694,10 @@ video {
   margin-top: 1rem;
 }
 
+.ms-2 {
+  margin-inline-start: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -747,6 +751,10 @@ video {
   height: fit-content;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -769,6 +777,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .max-w-xs {
@@ -889,6 +901,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-b-md {
@@ -1216,6 +1232,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-bold {
@@ -1605,6 +1629,16 @@ video {
     color: rgb(24 24 24 / var(--tw-text-opacity));
   }
 
+  .dark\:text-gray-300 {
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-offWhite {
+    --tw-text-opacity: 1;
+    color: rgb(242 242 242 / var(--tw-text-opacity));
+  }
+
   .dark\:placeholder-gray-400::-moz-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -1613,6 +1647,10 @@ video {
   .dark\:placeholder-gray-400::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+  }
+
+  .dark\:ring-offset-gray-800 {
+    --tw-ring-offset-color: #1f2937;
   }
 
   .dark\:hover\:bg-azulAgro:hover {
@@ -1663,6 +1701,11 @@ video {
   .dark\:focus\:ring-azulAgro:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(23 85 161 / var(--tw-ring-opacity));
+  }
+
+  .dark\:focus\:ring-blue-600:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(37 99 235 / var(--tw-ring-opacity));
   }
 }
 
@@ -1953,6 +1996,10 @@ video {
     text-align: left;
   }
 
+  .laptop\:text-right {
+    text-align: right;
+  }
+
   .laptop\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1998,6 +2045,14 @@ video {
     line-height: 1.25rem;
   }
 
+  .laptop\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .laptop\:text-\[12px\] {
+    font-size: 12px;
+  }
+
   .laptop\:font-thin {
     font-weight: 100;
   }
@@ -2040,5 +2095,12 @@ video {
 
   .laptop\:hover\:pl-2:hover {
     padding-left: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .laptop\:dark\:text-offBlack {
+      --tw-text-opacity: 1;
+      color: rgb(24 24 24 / var(--tw-text-opacity));
+    }
   }
 }
